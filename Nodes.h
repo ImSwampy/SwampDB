@@ -1,5 +1,5 @@
-#ifndef TEST_NODE_H
-#define TEST_NODE_H
+#ifndef NODE_H
+#define NODE_H
 
 #include <string>
 #include <bitset>

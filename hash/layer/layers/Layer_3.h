@@ -1,5 +1,5 @@
-#ifndef TEST_LAYER_3_H
-#define TEST_LAYER_3_H
+#ifndef LAYER_3_H
+#define LAYER_3_H
 
 #include "../Layer.h"
 #include "../../Byte.h"
@@ -12,4 +12,4 @@ public:
 
 
 
-#endif //TEST_LAYER_3_H
+#endif //LAYER_3_H

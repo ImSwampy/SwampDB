@@ -1,5 +1,5 @@
-#ifndef TEST_LAYER_H
-#define TEST_LAYER_H
+#ifndef LAYER_H
+#define LAYER_H
 
 #include <iostream>
 
@@ -11,4 +11,4 @@ public:
 };
 
 
-#endif //TEST_LAYER_H
+#endif //LAYER_H

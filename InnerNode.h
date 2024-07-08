@@ -1,6 +1,6 @@
 
-#ifndef TEST_INNERNODE_H
-#define TEST_INNERNODE_H
+#ifndef INNERNODE_H
+#define INNERNODE_H
 
 #include <variant>
 #include <string>
@@ -22,4 +22,4 @@ private:
 
 
 
-#endif //TEST_INNERNODE_H
+#endif //INNERNODE_H

@@ -1,5 +1,5 @@
-#ifndef TEST_LAYER_2_H
-#define TEST_LAYER_2_H
+#ifndef LAYER_2_H
+#define LAYER_2_H
 
 #include "../Layer.h"
 
@@ -11,4 +11,4 @@ public:
 
 
 
-#endif //TEST_LAYER_2_H
+#endif //LAYER_2_H

@@ -1,5 +1,5 @@
-#ifndef TEST_LAYER_4_H
-#define TEST_LAYER_4_H
+#ifndef LAYER_4_H
+#define LAYER_4_H
 
 #include "../Layer.h"
 #include "../../Byte.h"
