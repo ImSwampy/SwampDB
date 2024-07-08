@@ -2,7 +2,7 @@
 
 Layer_3::Layer_3() = default;
 
-void Layer_3::algorithm(Byte::Byte *bytes, size_t index) {
+void Layer_3::algorithm(Byte::Byte *bytes) {
 
     unsigned short int buffer = 0;
 
