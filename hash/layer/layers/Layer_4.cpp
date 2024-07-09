@@ -3,8 +3,7 @@
 Layer_4::Layer_4() = default;
 
 void Layer_4::algorithm(Byte::Byte *bytes) {
-
-    for (int i = 0; i < 256; i++) {
+    for (int i = 0; i < 32; i++) {
         switch (i%4) {
             case 0:
                 bytes[i] = Byte::add(bytes[i], i/16);

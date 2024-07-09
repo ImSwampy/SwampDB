@@ -7,9 +7,9 @@
 class Layer_4 : public Layer {
 public:
     Layer_4();
-    void algorithm(Byte::Byte bytes[256]);
+    static void algorithm(Byte::Byte bytes[32]);
 };
 
 
 
-#endif
+#endif //LAYER_4_H

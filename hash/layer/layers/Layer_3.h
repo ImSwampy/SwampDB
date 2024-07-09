@@ -7,7 +7,7 @@
 class Layer_3 : public Layer {
 public:
     Layer_3();
-    void algorithm(Byte::Byte bytes[256]);
+    void algorithm(Byte::Byte bytes[32]);
 };
 
 

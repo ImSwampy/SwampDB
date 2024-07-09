@@ -6,7 +6,7 @@ void Layer_3::algorithm(Byte::Byte *bytes) {
 
     unsigned short int buffer = 0;
 
-    for (int i = 0; i < 256; i++) {
+    for (int i = 0; i < 32; i++) {
 
         bytes[i] = bytes[buffer] & bytes[i];
 

@@ -8,7 +8,7 @@ std::string Node::getName() const {
     return name;
 }
 
-std::bitset<256> Node::getID() const {
+std::bitset<32> Node::getID() const {
     return ID;
 }
 

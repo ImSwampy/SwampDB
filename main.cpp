@@ -1,7 +1,9 @@
 #include "hash/hash.h"
+#include <bitset>
 
 int main() {
-    std::string str = "123jesuiskk";
+    std::string str = "je suis un kk mou";
     Hash hash(str);
-    hash.fill_hash();
+    hash.digest();
+    hash.display();
 }
