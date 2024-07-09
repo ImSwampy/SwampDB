@@ -54,7 +54,7 @@ void Hash::display() {
 }
 
 void Hash::layers_filter() {
-    Layer *local_layers[5] = {new Layer_1(), new Layer_2(), new Layer_3(), new Layer_4(), new Layer_5()};
+    Layer *local_layers[] = {new Layer_1(), new Layer_2(), new Layer_3(), new Layer_4(), new Layer_5()};
     for (int i = 0; i <= layers-1; i++) {
         local_layers[i]->algorithm(hash);
     }
