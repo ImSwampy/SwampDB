@@ -1,8 +1,8 @@
-#include "Layer_2.h"
+#include "headers/Layer_2.h"
 
 Layer_2::Layer_2() = default;
 
-void Layer_2::algorithm(Byte::Byte *bytes) {
+void Layer_2::algorithm(Byte::Byte bytes[32]) {
     for (int index = 0; index < 32; index++){
         switch (index%5) {
             case 0:

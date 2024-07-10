@@ -3,7 +3,7 @@
 
 namespace Byte {
 
-    Byte add(Byte byte1, Byte byte2) {
+    Byte add(Byte &byte1, Byte byte2) {
         unsigned short int result = byte1.to_ulong() + byte2.to_ulong();
         if (0 < result && result < 255) {
             return result;
@@ -17,7 +17,7 @@ namespace Byte {
         }
     }
 
-    Byte multiply(Byte byte1, Byte byte2) {
+    Byte multiply(Byte &byte1, Byte byte2) {
         unsigned short int result = byte1.to_ulong() * byte2.to_ulong();
         if (0 < result && result < 255) {
             return result;
@@ -31,7 +31,7 @@ namespace Byte {
         }
     }
 
-    Byte divide(Byte byte1, Byte byte2) {
+    Byte divide(Byte &byte1, Byte byte2) {
         unsigned short int result = byte1.to_ulong() / byte2.to_ulong();
         if (0 < result && result < 255) {
             return result;
@@ -45,7 +45,7 @@ namespace Byte {
         }
     }
 
-    Byte subtract(Byte byte1, Byte byte2) {
+    Byte subtract(Byte &byte1, Byte byte2) {
         unsigned short int result = byte1.to_ulong() - byte2.to_ulong();
         if (0 < result && result < 255) {
             return result;

@@ -1,14 +1,14 @@
-#include "Layer_1.h"
+#include "headers/Layer_1.h"
 
 Layer_1::Layer_1() = default;
 
-void Layer_1::algorithm(Byte::Byte *bytes) {
+void Layer_1::algorithm(Byte::Byte bytes[32]) {
     for (int index = 0; index < 32; index++) {
-        auto value = bytes[index].to_ulong();
+        auto *value = &bytes[index];
         if (index % 2 != 0) {
-            value = value << 2;
+            *value = (value->to_ulong() << 2);
         }  else {
-            value = value & 3;
+            *value = value->to_ulong() & 3;
         }
     }
 

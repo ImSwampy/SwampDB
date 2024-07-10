@@ -10,20 +10,28 @@ void Hash::set_layers(int layer_num) {
     }
 }
 
-
-
 void Hash::add_content_to_hash() {
+    if (content_size == 0 || content_byte == nullptr) {
+        std::cerr << "You need to convert content to bytes first!" << std::endl;
+        return;
+    }
+
     unsigned short int hash_index = 0;
-    for (int index = 0; index < content_byte->size(); index++) {
-        if (hash_index >= 255) {
+    for (int index = 0; index < content.size(); index++) {
+        if (hash_index >= 32) {
             hash_index = 0;
         }
+
         hash[hash_index] = Byte::add(hash[hash_index], content_byte[index]);
+        hash_index++;
     }
 }
 
-void Hash::string_to_byte() {
-    for (size_t i = 0; i < content.size(); i++) {;
+
+void Hash::convert_content_to_bytes() {
+    content_size = content.size();
+    content_byte = new Byte::Byte[content_size];
+    for (size_t i = 0; i < content_size; ++i) {
         content_byte[i] = Byte::Byte(content[i]);
     }
 }
@@ -53,17 +61,29 @@ void Hash::display() {
     }
 }
 
+
 void Hash::layers_filter() {
     Layer *local_layers[] = {new Layer_1(), new Layer_2(), new Layer_3(), new Layer_4(), new Layer_5()};
-    for (int i = 0; i <= layers-1; i++) {
+    for (int i = 0; i < layers; i++) {
         local_layers[i]->algorithm(hash);
     }
-
+    for (Layer *layer : local_layers) {
+        delete &layer;
+    }
 }
+
 
 void Hash::digest() {
     fill_hash();
-    string_to_byte();
+    convert_content_to_bytes();
     add_content_to_hash();
     layers_filter();
+}
+
+void Hash::set_content(std::string &new_content) {
+    content = new_content;
+}
+
+Hash::~Hash() {
+    delete [] content_byte;
 }

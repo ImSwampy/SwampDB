@@ -4,29 +4,33 @@
 #include <iostream>
 #include <vector>
 #include "layer/Layer.h"
-#include "layer/layers/Layer_1.h"
-#include "layer/layers/Layer_2.h"
-#include "layer/layers/Layer_3.h"
-#include "layer/layers/Layer_4.h"
-#include "layer/layers/Layer_5.h"
+#include "layer/layers/headers/Layer_1.h"
+#include "layer/layers/headers/Layer_2.h"
+#include "layer/layers/headers/Layer_3.h"
+#include "layer/layers/headers/Layer_4.h"
+#include "layer/layers/headers/Layer_5.h"
 
 
 class Hash {
 public:
     explicit Hash(std::string &content, unsigned short int layers = 3);
+    ~Hash();
+
     void digest();
     void display();
+    void set_content(std::string &new_content);
+    void set_layers(int layer_num);
 private:
     void fill_hash();
-    void string_to_byte();
+    void convert_content_to_bytes();
     void add_content_to_hash();
-    void set_layers(int layer_num);
     void layers_filter();
 
     unsigned short int layers;
+    size_t content_size;
     Byte::Byte hash[32];
     std::string content;
-    Byte::Byte *content_byte = new Byte::Byte[content.size()];
+    Byte::Byte *content_byte;
 };
 
 

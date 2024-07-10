@@ -1,10 +1,12 @@
-#include "Layer_3.h"
+#include "headers/Layer_3.h"
 
 Layer_3::Layer_3() = default;
 
-void Layer_3::algorithm(Byte::Byte *bytes) {
+void Layer_3::algorithm(Byte::Byte bytes[32]) {
 
     unsigned short int buffer = 0;
+
+
 
     for (int i = 0; i < 32; i++) {
 

@@ -1,13 +1,13 @@
 #ifndef LAYER_1_H
 #define LAYER_1_H
 
-#include "../Layer.h"
-#include "../../Byte.h"
+#include "../../Layer.h"
+#include "../../../Byte.h"
 
 class Layer_1 : public Layer {
 public:
     Layer_1();
-    static void algorithm(Byte::Byte bytes[32]);
+    void algorithm(Byte::Byte bytes[32]) override;
 };
 
 

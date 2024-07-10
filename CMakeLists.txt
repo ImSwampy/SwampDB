@@ -17,13 +17,15 @@ add_executable(test main.cpp
         hash/layer/Layer.cpp
         hash/layer/Layer.h
         hash/layer/layers/Layer_1.cpp
-        hash/layer/layers/Layer_1.h
+        hash/layer/layers/headers/Layer_1.h
         hash/layer/layers/Layer_2.cpp
-        hash/layer/layers/Layer_2.h
+        hash/layer/layers/headers/Layer_2.h
         hash/layer/layers/Layer_3.cpp
-        hash/layer/layers/Layer_3.h
+        hash/layer/layers/headers/Layer_3.h
         hash/layer/layers/Layer_4.cpp
-        hash/layer/layers/Layer_4.h
+        hash/layer/layers/headers/Layer_4.h
         hash/layer/layers/Layer_5.cpp
-        hash/layer/layers/Layer_5.h
+        hash/layer/layers/headers/Layer_5.h
+        hash/layer/layers/Layer_6.cpp
+        hash/layer/layers/headers/Layer_6.h
 )

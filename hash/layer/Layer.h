@@ -8,10 +8,7 @@
 class Layer {
 public:
     Layer();
-
-    virtual void algorithm(int &value, size_t index);
-
-    void algorithm(Byte::Byte Bitset[32]);
+    virtual void algorithm(Byte::Byte Bitset[32]) = 0;
 };
 
 
