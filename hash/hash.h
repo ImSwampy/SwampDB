@@ -13,10 +13,13 @@
 
 class Hash {
 public:
+    Hash();
+    explicit Hash(std::string &content);
     explicit Hash(std::string &content, unsigned short int layers = 3);
     ~Hash();
 
     void digest();
+    Byte::Byte *get();
     void display();
     void set_content(std::string &new_content);
     void set_layers(int layer_num);

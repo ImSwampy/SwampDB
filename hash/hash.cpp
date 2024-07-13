@@ -62,15 +62,7 @@ void Hash::fill_hash() {
     }
 }
 
-Hash::Hash(std::string &content, unsigned short int layers) : content(content), layers(layers)  {
-    if (1 > layers) {
-        layers = 1;
-        std::cerr << "Hash need at least 1 layer !" << std::endl;
-    } else if (layers > 9) {
-        layers = 9;
-        std::cerr << "Hash need at maximum 9 layers !" << std::endl;
-    }
-}
+
 
 void Hash::display() {
     for (auto byte : hash) {
@@ -106,4 +98,28 @@ void Hash::set_content(std::string &new_content) {
 
 Hash::~Hash() {
     delete [] content_byte;
+}
+
+
+Hash::Hash(std::string &hash_content) : content(hash_content) {
+    layers = 5;
+}
+
+Hash::Hash(std::string &hash_content, unsigned short int layers) : content(content), layers(layers)  {
+    if (1 > layers) {
+        layers = 1;
+        std::cerr << "Hash need at least 1 layer !" << std::endl;
+    } else if (layers > 9) {
+        layers = 9;
+        std::cerr << "Hash need at maximum 9 layers !" << std::endl;
+    }
+}
+
+Hash::Hash() {
+    content = "";
+    layers = 5;
+}
+
+Byte::Byte *Hash::get() {
+    return hash;
 }
