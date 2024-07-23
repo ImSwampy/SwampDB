@@ -7,8 +7,12 @@
 
 class Layer {
 public:
-    Layer();
-    virtual void algorithm(Byte::Byte Bitset[32]) = 0;
+    Layer(Byte::Byte (*layer)[16]);
+
+    void rotate_layer(int deg);
+
+private:
+    Byte::Byte layer[16][16];
 };
 
 

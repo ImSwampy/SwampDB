@@ -1,7 +1,5 @@
 #include "hash/hash.h"
-#include <bitset>
-#include <map>
-#include <random>
+#include "hash/layer/Layer.h"
 #include "hash/Byte.h"
 
 #include <iostream>
@@ -15,8 +13,8 @@ int main() {
     std::string str1 = "je suis un kk mou";
     std::string str2 = "joseph likes big woman penis in his butthole";
     std::string str3 = "skibidi toilets";
-    Hash hash(str1);
-    hash.set_layers(5);
+    Hash hash;
+    hash.set_content(str1);
     hash.digest();
     hash.display();
     std::cout << std::endl << std::endl;
@@ -27,5 +25,9 @@ int main() {
     hash.set_content(str3);
     hash.digest();
     hash.display();
-     */
+    */
+
+    Byte::Byte arr[3][3] = {{1, 1, 1}, {0, 0, 0}, {0, 0, 0}};
+
+    Layer layer(arr);
 }

@@ -62,8 +62,7 @@
 				13,
 				15,
 				17,
-				19,
-				21
+				19
 			]
 		}
 	],
@@ -110,8 +109,7 @@
 				13,
 				15,
 				17,
-				19,
-				21
+				19
 			]
 		},
 		{
@@ -128,7 +126,7 @@
 				16,
 				18,
 				20,
-				22
+				21
 			]
 		}
 	],
@@ -143,23 +141,23 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "Nodes.cpp",
+			"path" : "database/nodes/Nodes.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
-			"path" : "Nodes.h",
+			"path" : "database/nodes/Nodes.h",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "InnerNode.cpp",
+			"path" : "database/nodes/inner_nodes/InnerNode.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
-			"path" : "InnerNode.h",
+			"path" : "database/nodes/inner_nodes/InnerNode.h",
 			"sourceGroupIndex" : 1
 		},
 		{
@@ -198,67 +196,61 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "hash/layer/layers/Layer_1.cpp",
+			"path" : "database/boards/Board.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
-			"path" : "hash/layer/layers/headers/Layer_1.h",
+			"path" : "database/boards/Board.h",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "hash/layer/layers/Layer_2.cpp",
+			"path" : "database/boards/board_types/Hierarchical.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
-			"path" : "hash/layer/layers/headers/Layer_2.h",
+			"path" : "database/boards/board_types/Hierarchical.h",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "hash/layer/layers/Layer_3.cpp",
+			"path" : "database/boards/board_types/Individual.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
-			"path" : "hash/layer/layers/headers/Layer_3.h",
+			"path" : "database/boards/board_types/Individual.h",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "hash/layer/layers/Layer_4.cpp",
+			"path" : "database/boards/board_types/Group.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
-			"path" : "hash/layer/layers/headers/Layer_4.h",
+			"path" : "database/boards/board_types/Group.h",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "hash/layer/layers/Layer_5.cpp",
+			"path" : "database/boards/board_types/Board_Preset.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
-			"path" : "hash/layer/layers/headers/Layer_5.h",
+			"path" : "database/boards/board_types/Board_Preset.h",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "hash/layer/layers/Layer_6.cpp",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"path" : "hash/layer/layers/headers/Layer_6.h",
+			"path" : "database/nodes/types/node_types.h",
 			"sourceGroupIndex" : 1
 		}
 	],

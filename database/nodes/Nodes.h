@@ -2,10 +2,10 @@
 #define NODE_H
 
 #include <string>
-#include <bitset>
 #include <vector>
 #include <unordered_map>
-#include "InnerNode.h"
+#include "inner_nodes/InnerNode.h"
+#include "../../hash/Byte.h"
 
 class Node {
 public:
@@ -15,7 +15,7 @@ public:
     std::vector<InnerNode> getInnerNodes() const;
 private:
     std::string name;
-    std::bitset<32> ID;
+    Byte::Byte ID;
     std::vector<InnerNode> innerNode;
     std::unordered_map<std::bitset<32>, float> links;
 };

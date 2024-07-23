@@ -6,26 +6,26 @@ set(CMAKE_VERBOSE_MAKEFILE ON)
 
 
 add_executable(test main.cpp
-        Nodes.cpp
-        Nodes.h
-        InnerNode.cpp
-        InnerNode.h
+        database/nodes/Nodes.cpp
+        database/nodes/Nodes.h
+        database/nodes/inner_nodes/InnerNode.cpp
+        database/nodes/inner_nodes/InnerNode.h
         hash/hash.cpp
         hash/hash.h
         hash/Byte.cpp
         hash/Byte.h
         hash/layer/Layer.cpp
         hash/layer/Layer.h
-        hash/layer/layers/Layer_1.cpp
-        hash/layer/layers/headers/Layer_1.h
-        hash/layer/layers/Layer_2.cpp
-        hash/layer/layers/headers/Layer_2.h
-        hash/layer/layers/Layer_3.cpp
-        hash/layer/layers/headers/Layer_3.h
-        hash/layer/layers/Layer_4.cpp
-        hash/layer/layers/headers/Layer_4.h
-        hash/layer/layers/Layer_5.cpp
-        hash/layer/layers/headers/Layer_5.h
-        hash/layer/layers/Layer_6.cpp
-        hash/layer/layers/headers/Layer_6.h
+        database/boards/Board.cpp
+        database/boards/Board.h
+        database/boards/Board.h
+        database/boards/board_types/Hierarchical.cpp
+        database/boards/board_types/Hierarchical.h
+        database/boards/board_types/Individual.cpp
+        database/boards/board_types/Individual.h
+        database/boards/board_types/Group.cpp
+        database/boards/board_types/Group.h
+        database/boards/board_types/Board_Preset.cpp
+        database/boards/board_types/Board_Preset.h
+        database/nodes/types/node_types.h
 )
