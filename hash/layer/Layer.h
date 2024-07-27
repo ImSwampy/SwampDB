@@ -7,10 +7,8 @@
 
 class Layer {
 public:
-    Layer(Byte::Byte (*layer)[16]);
-
-    void rotate_layer(int deg);
-
+    Layer();
+    void fill_layer(Byte::Byte *value);
 private:
     Byte::Byte layer[16][16];
 };

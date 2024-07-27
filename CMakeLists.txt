@@ -28,4 +28,7 @@ add_executable(test main.cpp
         database/boards/board_types/Board_Preset.cpp
         database/boards/board_types/Board_Preset.h
         database/nodes/types/node_types.h
+        hash/layer/processing_layer/Processing_Layer.cpp
+        hash/layer/processing_layer/Processing_Layer.h
+        hash/const.h
 )

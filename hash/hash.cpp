@@ -26,6 +26,10 @@ void Hash::display() const {
     }
 }
 
+void Hash::create_layers() {
+
+}
+
 void Hash::digest() {
 
 }

@@ -17,6 +17,7 @@ public:
     void set_seed(size_t hash_seed);
     size_t get_seed() const;
 private:
+    void create_layers();
     void fill_hash();
     void content_to_bytes();
 

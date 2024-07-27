@@ -11,7 +11,7 @@ class Node {
 public:
     Node(std::string &node_name, std::vector<InnerNode> &nodes);
     std::string getName() const;
-    std::bitset<32> getID() const;
+    Byte::Byte getID() const;
     std::vector<InnerNode> getInnerNodes() const;
 private:
     std::string name;
